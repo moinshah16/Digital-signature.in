@@ -65,7 +65,7 @@ canvas {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #e2ed0c;
     color: white;
     transition: background-color 0.3s;
     margin: 5px; /* Add some margin between buttons */
