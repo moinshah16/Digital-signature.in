@@ -4,49 +4,49 @@ body {
     background-color:#F3D7CA;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:#F3D7CA;
+}
+
+/* Default styles */
 .signature-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #FFF8E3;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limit maximum width for larger screens */
+    margin: 0 auto; /* Center the container */
 }
 
 canvas {
     border: 1px solid #000;
     margin-bottom: 10px;
     border-radius: 5px;
+    width: 100%; /* Make canvas responsive */
+    max-width: 500px; /* Limit maximum width for larger screens */
+}
+
+.controls {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center;
+}
+
+.controls label {
+    font-weight: bold;
+    margin-right: 5px;
 }
 
 .controls input[type="range"] {
-    width: 150px;
-    margin-right: 5px;
-    appearance: none;
-    height: 5px;
-    background: #d3d3d3;
-    border-radius: 10px;
-    outline: none;
-}
-
-.controls input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #4CAF50;
-    cursor: pointer;
-}
-
-.controls input[type="range"]::-moz-range-thumb {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #4CAF50;
-    cursor: pointer;
+    width: 100%; /* Make font size range input full width on smaller screens */
+    margin-bottom: 10px;
 }
 
 .controls input[type="color"] {
@@ -59,22 +59,14 @@ canvas {
     margin-right: 5px;
 }
 
-
 .controls button {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color:rgb(125, 233, 9);
+    background-color: #4CAF50;
     color: white;
     transition: background-color 0.3s;
-}
-
-.controls button:hover {
-    background-color: rgb(75, 133, 220);
-}
-
-.controls button:not(:last-child) {
-    margin-right: 10px;
+    margin: 5px; /* Add some margin between buttons */
 }
