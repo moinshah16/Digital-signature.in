@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:#F3D7CA;
+}
+
+.signature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF8E3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.controls input[type="range"] {
+    width: 150px;
+    margin-right: 5px;
+    appearance: none;
+    height: 5px;
+    background: #d3d3d3;
+    border-radius: 10px;
+    outline: none;
+}
+
+.controls input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.controls input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.controls input[type="color"] {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:rgb(125, 233, 9);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: rgb(75, 133, 220);
+}
+
+.controls button:not(:last-child) {
+    margin-right: 10px;
+}
