@@ -1,16 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color:#F3D7CA;
+    background-color: #f0f0f0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color:#F3D7CA;
-}
-
-/* Default styles */
 .signature-container {
     display: flex;
     justify-content: center;
@@ -20,23 +13,16 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px; /* Limit maximum width for larger screens */
-    margin: 0 auto; /* Center the container */
 }
 
 canvas {
     border: 1px solid #000;
     margin-bottom: 10px;
     border-radius: 5px;
-    width: 100%; /* Make canvas responsive */
-    max-width: 500px; /* Limit maximum width for larger screens */
 }
 
 .controls {
     margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-    justify-content: center;
 }
 
 .controls label {
@@ -45,8 +31,54 @@ canvas {
 }
 
 .controls input[type="range"] {
-    width: 100%; /* Make font size range input full width on smaller screens */
-    margin-bottom: 10px;
+    width: 150px;
+    margin-right: 5px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+}
+
+.controls button:not(:last-child) {
+    margin-right: 10px;
+}
+.controls input[type="range"] {
+    width: 150px;
+    margin-right: 5px;
+    appearance: none;
+    height: 5px;
+    background: #d3d3d3;
+    border-radius: 10px;
+    outline: none;
+}
+
+.controls input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.controls input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
 }
 
 .controls input[type="color"] {
@@ -57,16 +89,4 @@ canvas {
     cursor: pointer;
     vertical-align: middle;
     margin-right: 5px;
-}
-
-.controls button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #e2ed0c;
-    color: white;
-    transition: background-color 0.3s;
-    margin: 5px; /* Add some margin between buttons */
 }
